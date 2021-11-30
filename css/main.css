@@ -1,0 +1,239 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap");
+body {
+    background-color: #dcdee1;
+    font-family: "Montserrat", sans-serif;
+}
+.page {
+    max-width: 1170px;
+    min-width: 320px;
+    padding: 30px;
+    margin: 30px auto;
+    background-color: rgb(240, 240, 240);
+    display: flex;
+    box-shadow: 20px 20px 20px rgba(110, 111, 112, 0.6);
+}
+.sidebar {
+    flex: 0 0 300px;
+}
+.content {
+    flex: 1 1 auto;
+    padding: 20px 20px 0px 0px;
+}
+a {
+    display: flex;
+    align-items: flex-end;
+    color: #000;
+}
+a:hover {
+    color: rgb(22, 6, 255);
+}
+.title {
+    font-size: 32px;
+    font-weight: 500;
+    line-height: 120%;
+    text-align: center;
+}
+/* *===========content=========== */
+.content__column {
+    display: flex;
+    flex-direction: column;
+}
+.about__title {
+    font-weight: 700;
+    font-size: 60px;
+    line-height: 120%;
+    text-align: start;
+    margin: 30px 0 60px 0px;
+}
+.about__subtitle {
+    text-align: end;
+    font-weight: 700;
+    font-size: 42px;
+    line-height: 120%;
+    margin: 0px 0px 30px 0px;
+}
+.about__text {
+    font-size: 26px;
+    line-height: 120%;
+}
+/* *===========experience=========== */
+.experience__column {
+    display: flex;
+    flex-direction: column;
+}
+.experience__title {
+    margin: 30px 0px;
+}
+.experience__company {
+    margin: 0px 0px 30px 0px;
+}
+.company__title {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin: 0px 0px 20px 0px;
+}
+.company__title img {
+    margin: 0px 10px 0px 0px;
+}
+.company__title > a span {
+    font-size: 26px;
+    letter-spacing: 1.5px;
+    vertical-align: bottom;
+}
+.company__title span {
+    font-size: 20px;
+    line-height: 120%;
+}
+.company__position {
+    margin: 0px 0px 20px 0px;
+}
+.position {
+    font-size: 24px;
+    text-align: end;
+}
+.list__items {
+    font-size: 18px;
+}
+.list__items li {
+    margin: 0px 0px 10px 0px;
+}
+.list__items li:last-child {
+    padding: 0;
+}
+/* *===========education=========== */
+.education__title {
+    margin: 0px 0px 30px 0px;
+}
+.education__content a {
+    font-size: 24px;
+    line-height: 120%;
+}
+.education__content p {
+    font-size: 20px;
+    line-height: 120%;
+    margin: 0px 0px 10px 0px;
+}
+.education__content p:last-child {
+    margin: 0;
+}
+/* *===========sidebar=========== */
+.sidebar__column {
+    display: flex;
+    flex-direction: column;
+}
+.sidebar__image img {
+    width: 100%;
+    border-radius: 20%;
+}
+.sidebar__contacts {
+    padding: 20px 0px 0px 20px;
+}
+.contacts__list li {
+    font-size: 24px;
+    margin: 0px 0px 20px 0px;
+}
+.contacts__list img {
+    width: 30px;
+    margin: 0px 10px 0px 0px;
+}
+.sidebar__skills {
+    padding: 20px 0px 0px 20px;
+}
+.skills__column {
+    display: flex;
+    flex-direction: column;
+}
+.skills__content {
+    margin: 20px 0px 0px 0px;
+}
+.skills__row {
+    display: flex;
+    flex-direction: row;
+    margin: 0px 0px 20px 0px;
+}
+.skills__row img {
+    margin: 0px 10px 0px 0px;
+}
+.skills__row span {
+    font-size: 24px;
+}
+.sidebar__languages {
+    padding: 20px 0px 0px 20px;
+}
+.languages__content {
+    margin: 20px 0px 0px 0px;
+}
+.languages__column {
+    display: flex;
+    flex-direction: column;
+}
+.languages__row {
+    display: flex;
+    flex-direction: row;
+    margin: 0px 0px 20px 0px;
+}
+.languages__row:last-child {
+    margin: 0;
+}
+.languages__row img {
+    margin: 0px 10px 0px 0px;
+}
+.languages__row span {
+    font-size: 24px;
+}
+.sidebar__hobbies {
+    padding: 20px 0px 0px 20px;
+}
+.hobbies__content {
+    margin: 20px 0px 0px 0px;
+}
+.hobbies__list li {
+    font-size: 24px;
+    margin: 0px 0px 10px 0px;
+}
+.hobbies__list li:last-child {
+    margin: 0;
+}
+@media (max-width: 767px) {
+    .page {
+        max-width: 720px;
+        padding: 10px;
+        margin: 10px auto;
+        flex-direction: column-reverse;
+    }
+    .sidebar__image img {
+        max-width: 300px;
+    }
+    .sidebar__column {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    .title {
+        text-align: start;
+    }
+    .skills__row {
+        margin: 0px 0px 10px 0px;
+    }
+    .about__title {
+        font-size: 40px;
+        line-height: 120%;
+        text-align: start;
+        margin: 10px 0 20px 0px;
+    }
+    .about__subtitle {
+        font-size: 30px;
+    }
+    .content {
+        padding: 20px 10px;
+    }
+    .company__title {
+        display: flex;
+        flex-direction: column;
+    }
+    .company__title span {
+        margin: 10px 0px 0px 0px;
+    }
+}
